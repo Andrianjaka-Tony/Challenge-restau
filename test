@@ -1,0 +1,14 @@
+pere (diabetique), mere (tensionnaire), enfant (grandis)
+
+diabetique: L, M, M, J, V
+  50% VB
+  20% LH
+  30% VR-
+tensionnaire: TJ
+  40% LH
+  40% LB-
+  20% VB
+grandis: J, V, S, D
+  40% VB
+  30% LB-
+  30% LH
