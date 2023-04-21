@@ -41,6 +41,8 @@
 .welcome-text {
   transform: translateY(70px);
   opacity: 0;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .animation-text {
@@ -56,6 +58,8 @@
 
 .animation-text span {
   transform: translateY(50px);
+  will-change: transform;
+  backface-visibility: hidden;
   opacity: 0;
 }
 

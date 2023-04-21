@@ -9,6 +9,7 @@ let property = {
 title.animate(property, {
   duration: 300,
   fill: "forwards",
+  easing: "ease",
 });
 let delay = 500;
 words.forEach((word) => {
@@ -16,7 +17,7 @@ words.forEach((word) => {
     duration: 600,
     delay: delay,
     fill: "forwards",
-    easing: "ease-out",
+    easing: "ease",
   });
   delay += 50;
 });
