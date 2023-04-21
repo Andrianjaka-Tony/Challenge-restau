@@ -16,6 +16,7 @@ words.forEach((word) => {
     duration: 600,
     delay: delay,
     fill: "forwards",
+    easing: "ease-out",
   });
-  delay += 70;
+  delay += 50;
 });
