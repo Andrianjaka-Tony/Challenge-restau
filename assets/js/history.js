@@ -31,3 +31,18 @@ dots.forEach((dot) => {
     switchHistoryItem(dot);
   });
 });
+
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting) entry.target.classList.add("reveal-visible");
+      else entry.target.classList.remove("reveal-visible");
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+});
+document
+  .querySelectorAll(".reveal")
+  .forEach((reveal) => observer.observe(reveal));
