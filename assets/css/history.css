@@ -1,0 +1,146 @@
+#history {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-image-history {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/history.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+}
+
+.history-container {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  width: 90%;
+  margin: 50px auto 20px auto;
+  text-align: center;
+  font-family: title;
+  font-size: 4rem;
+  color: wheat;
+}
+
+.history-items-container {
+  width: 90vw;
+  padding: 0 5vw;
+  transition: 0.2s;
+}
+
+.history-items-container.invisible {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.history-item {
+  align-items: center;
+  width: 100%;
+  color: rgba(245, 222, 179, 0.661);
+  display: none;
+}
+
+.history-item.active {
+  display: flex;
+}
+
+.left-side {
+  width: 50%;
+  padding: 20px 0;
+}
+
+.date {
+  font-family: regular-Text;
+  font-weight: bold;
+  font-size: 7rem;
+}
+
+.history-title {
+  font-size: 4rem;
+  font-family: regular-text;
+}
+
+.history-text {
+  font-family: light-text;
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.2rem;
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-image {
+  object-fit: cover;
+  height: 600px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 40px;
+  z-index: 4;
+  left: 4rem;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dots span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: rgba(245, 222, 179, 0.301);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dots span.active,
+.dots span:hover {
+  background: wheat;
+}
+
+@media screen and (max-width: 1024px) {
+  .history-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .date {
+    font-size: 14rem;
+  }
+  .history-title {
+    font-size: 8rem;
+  }
+  .history-text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .right-image {
+    height: 300px;
+  }
+  .title {
+    font-size: 8rem;
+  }
+}

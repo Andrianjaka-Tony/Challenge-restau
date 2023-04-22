@@ -1,4 +1,4 @@
-.landing {
+#landing {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -13,6 +13,7 @@
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   filter: brightness(0.3);
 }
 

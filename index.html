@@ -9,7 +9,6 @@
   <!-- * CSS Links begin -->
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/navbar.css">
-  <link rel="stylesheet" href="./assets/css/header.css">
   <!-- * CSS Links end -->
 
 </head>
@@ -24,7 +23,8 @@
     </div>
   </nav>
 
-  <header class="landing">
+  <header id="landing">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <div class="bg-image-header"></div>
     <div class="text-container">
       <h1>
@@ -43,10 +43,54 @@
     </div>
   </header>
 
-  <section class="history"></section>
+  <section id="history">
+    <link rel="stylesheet" href="./assets/css/history.css">
+    <div class="bg-image-history"></div>
+    <div class="history-container">
+      <h1 class="title">History</h1>
+      <div class="dots">
+        <span data-index="0" class="active"></span>
+        <span data-index="1"></span>
+        <span data-index="2"></span>
+      </div>
+      <div class="history-items-container">
+        <div class="history-item active">
+          <div class="left-side">
+            <h1 class="date">2009</h1>
+            <h2 class="history-title">Creation</h2>
+            <h3 class="history-text">Philippe Etchebest created the restaurant.Japanese cuisine has become increasingly popular in Paris over the past few decades, with a growing number of Japanese restaurants opening up throughout the city. Many of these restaurants offer traditional dishes such as sushi, sashimi, and tempura, as well as more modern interpretations of Japanese cuisine.</h3>
+          </div>
+          <div class="right-side">
+            <img src="./assets/images/2009.png" alt="Image de l'histoire" class="right-image">
+          </div>
+        </div>
+        <div class="history-item">
+          <div class="left-side">
+            <h1 class="date">2014</h1>
+            <h2 class="history-title">Transition</h2>
+            <h3 class="history-text">After 5 years of direction, Philippe Etchebest leaves it and gives it to Cyril Lignac. Cyril Lignac brings some new plates and new Japanese specialities that attract many clients and give us the graduation for 3 stars restaurant.</h3>
+          </div>
+          <div class="right-side">
+            <img src="./assets/images/2014.png" alt="Image de l'histoire" class="right-image">
+          </div>
+        </div>
+        <div class="history-item">
+          <div class="left-side">
+            <h1 class="date">2017</h1>
+            <h2 class="history-title">Recruitement</h2>
+            <h3 class="history-text">The director Cyril Lignac suggests to Alain Passard be his assistant and Alain accepted. It was a good proposition because it allowed the restaurant to go up to 4 stars.</h3>
+          </div>
+          <div class="right-side">
+            <img src="./assets/images/2017.png" alt="Image de l'histoire" class="right-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- * JS Links begin -->
   <script src="./assets/js/anime-text.js" defer></script>
+  <script src="./assets/js/history.js" defer></script>
   <!-- * JS Links end -->
 
 </body>
